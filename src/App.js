@@ -1,25 +1,15 @@
-import logo from './logo.svg';
 import './App.css';
 
-function App() {
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <crowdswap-swap-widget id="crowdswapWidget"
+      config='{
+      "fromTokenAddress":"0x8595F9dA7b868b1822194fAEd312235E43007b49",
+      "fromChainId":56,
+      "toTokenAddress":"0x514910771AF9Ca656af840dff83E8264EcF986CA",
+      "toChainId":21,
+      "theme":"light"
+      }'
+    ></crowdswap-swap-widget>
   );
 }
-
-export default App;
